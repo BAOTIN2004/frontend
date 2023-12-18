@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.text-white{
+    color: #fff !important;
+}
+#header{
+    background-color: #000;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 46.5px;
+}
+
+#nav{
+    display: inline-block;
+}
+#nav>li{
+    display: inline-block;
+}
+#nav li {   
+    
+    position: relative;
+    list-style: none;
+}    
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    min-width: 163px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.3);
+}
+
+/* lay the con truc tiep */
+#nav >li >a{
+color: #fff;
+text-transform: uppercase ;
+}
+
+#nav li a{
+    display: block;
+    color: #fff;
+    line-height: 46.5px;
+    padding: 0 24px;
+    /* display: inline-block; */
+    text-decoration: none;
+}
+
+#nav >li:hover >a,
+ #nav .subnav li:hover a{
+    background-color: #ccc;
+    color: #000;
+
+}
+
+#nav li:hover .subnav{
+    /* background-color: #ccc; */
+    display: block !important; 
+}
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+
+}
+
+#nav .nav-arrow-dow{
+    font-size: 12px;
+}
+
+#header .search-icon{
+    color:#fff;
+    font-size: 20px;
+    line-height: 46.5px;
+}
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+
+#header .search-btn:hover{
+    color: #fff!important;
+    background-color: #f44336!important;
+}
+#slider{
+ position: relative;
+ margin-top: 46px;
+ padding-top: 50%;
+ background: url(/images/slider1.jpg) top center / cover no-repeat;  
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%,0%);
+    
+}
+#slider .text-heading{
+    text-align: center;
+}
+
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    margin: 0 auto;
+}
+
+#content .section-heading{
+font-size: 30px;
+text-align: center;
+font-weight: 500;
+letter-spacing: 3px;
+}
+
+#content .section-sub-heading{
+text-align: center;
+font-size: 15px;
+margin: 15px 0;
+font-style: italic;
+opacity: 0.6;
+}
+
+#content .about-text{
+    text-align: justify;
+    font-size: 15px;
+    /* line-height: ; */
+}
+
+#content .member-list{
+    margin-top: 48px;
+    overflow: hidden;
+}
+
+#content .member-item{
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+#content .name-member{
+    font-size: 15px;
+    
+}
+
+#content .img-member{
+margin-top: 15px;
+width: 154px;
+border-radius: 5px;
+}
+
+/* tour */
+.tour-section{
+    background-color: #000;
+}
+
+
+.tour-section .tickest-list{
+    background-color: #fff;
+    margin-top: 40px;
+}
+.tickest-list li{
+    padding: 8px 16px;
+    border-bottom: 1px solid;
+}
+
+.tour-section .sold-out{
+    color: #fff!important;
+    background-color: #f44336!important;
+}
+
+.tickest-list .sold-out{
+    margin-left: 16px;
+    padding: 0 8px;
+    font-size: 15px;
+    line-height: 1.5;
+    display: inline-block;
+}
+
+.tickest-list .quantity{
+    float: right;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: #000;
+    padding: 0 8px;
+}
+
+.places-list{
+    /* margin-top: 32px; */
+    margin: 32px -8px -0 ;
+    padding-bottom: 48px;
+
+}
+
+.place-item{
+    float: left;
+    width: calc(100%/3);
+    /* margin-right: 16px ; */
+    padding: 0 8px;
+    /* background-color: #ccc; */
+   
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+    
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-body .place-heeading{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 15px 0px;
+}
+
+.play-time{
+    margin: 15px 0px;
+}
+
+.play-desc{
+    margin: 15px 0px;
+    line-height: 1.4;
+}
+
+.place-buy-btn{
+   
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+}
+
+.place-buy-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
